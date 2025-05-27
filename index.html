@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程作业展示 - 许严</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Python程序设计作业展示</h1>
+        <h2>许严 3210101165</h2>
+    </header>
+
+    <div class="projects-container">
+        <!-- 作业1：平方和计算器 -->
+        <div class="project-card" onclick="showCode('square')">
+            <div class="project-number">作业一</div>
+            <h3>平方和计算器</h3>
+            <p>点击查看实现代码</p>
+        </div>
+
+        <!-- 作业2：调和级数计算器 -->
+        <div class="project-card" onclick="showCode('harmonic')">
+            <div class="project-number">作业二</div>
+            <h3>调和级数计算器</h3>
+            <p>点击查看实现代码</p>
+        </div>
+
+        <!-- 作业3：大学生活模拟游戏 -->
+        <div class="project-card" onclick="showCode('game')">
+            <div class="project-number">作业三</div>
+            <h3>大学生活模拟游戏</h3>
+            <p>点击查看实现代码</p>
+        </div>
+    </div>
+
+    <!-- 代码展示模态框 -->
+    <div id="codeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <pre id="codeContainer"></pre>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
